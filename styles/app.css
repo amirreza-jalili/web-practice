@@ -21,7 +21,7 @@
 /* Normalize Css */
 
 ::selection {
-  background-color: #0066ff;
+  background-color: #0046af;
   color: white;
 }
 
@@ -490,6 +490,69 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+/* starts footer */
+
+.footer {
+}
+.top {
+  background-color: #0066ff;
+}
+.top-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20rem;
+}
+.footer-heading {
+  color: white;
+  font-weight: 400;
+}
+.footer-email {
+  width: auto;
+  position: relative;
+}
+.email-input {
+  border: none;
+  outline: none;
+  width: 20rem;
+  height: 50px;
+  padding: 0 66px 0 16px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+.email-btn {
+  position: absolute;
+  border: none;
+  outline: none;
+  background-color: #0066ff;
+  color: white;
+  width: 50px;
+  height: 40px;
+  top: 5px;
+  right:5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all ease .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-btn:hover{
+  background-color: #0056d8;
+}
+
+.icons{
+  width: 1.5rem;
+}
+
+.bottom {
+}
+.bottom-footer-left {
+}
+.bottom-footer-right {
 }
 
 /* Project Responsive */
