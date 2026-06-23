@@ -456,40 +456,41 @@ body {
 /* start portfolie */
 
 .portfolie {
-  min-height: 100vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.portfolie-heading {
+  text-align: center;
+  color: #6c7890;
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+.portfolie-para {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #081d43;
+  margin-bottom: 4rem;
+}
+.portfolie-items {
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem 0;
 }
-
-.box{
-  width: 200px;
-  height: 200px;
-  background-color: red;
-  position: relative;
+.portfolie-item {
+  flex-basis: 20rem;
+  height: 14rem;
   overflow: hidden;
-  border-radius: 8px;
-  cursor: pointer;
+  border-radius: 5px;
 }
-
-.box::before{
-  content:"";
-  width: 50px;
-  height: 50px;
-  left: -50px;
-  bottom: -50px;
-  position: absolute;
-  background-color: blue;
-  transition: all ease .8s;
-  border-top-right-radius: 100%;
-
+.portfolie-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
-
-.box:hover::before{
-  width: 200%;
-  height: 200%;
-}
-
 
 /* Project Responsive */
 
