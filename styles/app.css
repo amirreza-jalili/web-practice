@@ -453,6 +453,44 @@ body {
   margin-top: 8rem;
 }
 
+/* start portfolie */
+
+.portfolie {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.box::before{
+  content:"";
+  width: 50px;
+  height: 50px;
+  left: -50px;
+  bottom: -50px;
+  position: absolute;
+  background-color: blue;
+  transition: all ease .8s;
+  border-top-right-radius: 100%;
+
+}
+
+.box:hover::before{
+  width: 200%;
+  height: 200%;
+}
+
+
 /* Project Responsive */
 
 @media only screen and (max-width: 1200px) {
