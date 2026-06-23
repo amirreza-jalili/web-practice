@@ -229,7 +229,6 @@ body {
   padding-left: 1rem;
 }
 
-/* header start */
 /* top header section */
 .header {
   width: 100%;
@@ -339,10 +338,6 @@ body {
   object-fit: cover;
   object-position: center;
 }
-
-/* header end */
-
-/* main start */
 
 /* section how it work */
 
