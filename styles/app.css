@@ -331,7 +331,37 @@ body {
   text-decoration: none;
   color: white;
   font-weight: 500px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  transition: all ease 0.4s;
+  border: none;
 }
+
+.works::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -20px;
+  bottom: -20px;
+  border-top-right-radius: 100%;
+  background-color: white;
+  transition: all ease 0.7s;
+  z-index: -1;
+}
+
+.works:hover::before {
+  width: 400%;
+  height: 400%;
+}
+
+.works:hover {
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 10px;
+  transform: translateY(-10px);
+}
+
 .header-logo-image {
   width: 100%;
   height: 100%;
@@ -493,7 +523,7 @@ body {
 
 /* starts footer */
 
-.top {
+.top-footer {
   background-color: #0066ff;
 }
 .top-content-wrapper {
