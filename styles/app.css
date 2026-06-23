@@ -21,7 +21,7 @@
 /* Normalize Css */
 
 ::selection {
-  background-color: #0050c8;
+  background-color: #0066ff;
   color: white;
 }
 
@@ -393,6 +393,64 @@ body {
 .main-img {
   width: 100%;
   height: 100%;
+}
+
+/* comments section */
+
+.comments {
+  background-color: #2f5bea;
+  box-sizing: border-box;
+  padding: 1rem 7rem calc(1rem + 19.92px);
+}
+.comments-heading {
+  text-align: center;
+  color: white;
+}
+.comments-para {
+  text-align: center;
+  color: white;
+  max-width: 29rem;
+  margin: 0 auto;
+  line-height: 1.5rem;
+}
+.comments-items-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3rem;
+  box-sizing: border-box;
+}
+.comments-item {
+  flex-basis: 20rem;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 15rem;
+}
+.comments-item-para {
+  padding: 0 1rem;
+  text-align: start;
+  color: #525252;
+}
+.comments-item-bottom {
+  border-top: 1px solid #d9d8d8;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+.user-profile-name {
+  color: #1e1e1e;
+}
+
+.brands {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8rem;
 }
 
 /* Project Responsive */
